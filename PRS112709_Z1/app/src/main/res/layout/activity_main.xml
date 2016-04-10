@@ -9,8 +9,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="prs.etfbl.net.prs112709_z1.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/add_new"
+            android:gravity="center"
+            android:id="@+id/addNew"
+            />
+
+        <ListView
+            android:id="@+id/list"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+
+    </LinearLayout>
 </RelativeLayout>

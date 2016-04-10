@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">" PRS112709_Z1"</string>
+    <string name="app_name">TODO</string>
+    <string name="add_new">ADD NEW</string>
+    <string name="status">status</string>
+    <string name="hintNewNote">Text for new note</string>
+    <string name="ok">OK</string>
+    <string name="saved">Item saved!</string>
+    <string name="empty">Item can not be empty!</string>
 </resources>
