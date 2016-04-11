@@ -1,3 +1,20 @@
+/****************************************************************************
+ *
+ * Copyright (c) 2016 Elektrotehnički fakultet
+ * Patre 5, Banja Luka
+ *
+ * All Rights Reserved
+ *
+ * \file NewStavka.java
+ * \brief
+ * Handle adding new items.
+ *
+ * Created on 10.04.2016.
+ *
+ * @Author Milan Bojic
+ *
+ **********************************************************************/
+
 package net.etfbl.prs.stavka;
 
 import android.support.v7.app.AppCompatActivity;

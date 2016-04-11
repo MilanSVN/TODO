@@ -1,6 +1,22 @@
+/****************************************************************************
+ *
+ * Copyright (c) 2016 Elektrotehnički fakultet
+ * Patre 5, Banja Luka
+ *
+ * All Rights Reserved
+ *
+ * \file EditStavka.java
+ * \brief
+ * Handle editing items.
+ *
+ * Created on 10.04.2016.
+ *
+ * @Author Milan Bojic
+ *
+ **********************************************************************/
+
 package net.etfbl.prs.stavka;
 
-import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -49,6 +65,10 @@ public class EditStavka extends AppCompatActivity implements  View.OnClickListen
          }
     }
 
+/************************************************************************
+ * @brief Saves edited item.
+ * @return void
+ *************************************************************************/
     private void save(){
         if (text != null) {
             if(text.getText().toString().matches("")) {
@@ -66,7 +86,10 @@ public class EditStavka extends AppCompatActivity implements  View.OnClickListen
         }
 
     }
-
+/************************************************************************
+     * @brief Deletes opened item.
+     * @return void
+**************************************************************************/
     private void delete(){
         if(MainActivity.adapter.removeItem(stavka)) {
             Toast toast = Toast.makeText(getApplicationContext(), R.string.deleted, Toast.LENGTH_SHORT);

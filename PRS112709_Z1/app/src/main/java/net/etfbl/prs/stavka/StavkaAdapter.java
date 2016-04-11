@@ -1,3 +1,20 @@
+/****************************************************************************
+ *
+ * Copyright (c) 2016 Elektrotehnički fakultet
+ * Patre 5, Banja Luka
+ *
+ * All Rights Reserved
+ *
+ * \file StavkaAdapter.java
+ * \brief
+ * Adapter class for Stavka items.
+ *
+ * Created on 10.04.2016.
+ *
+ * @Author Milan Bojic
+ *
+ **********************************************************************/
+
 package net.etfbl.prs.stavka;
 
 import android.content.Context;
@@ -12,24 +29,45 @@ import java.util.ArrayList;
 
 import prs.etfbl.net.prs112709_z1.R;
 
-/**
- * Created by Milan on 10-Apr-16.
- */
 public class StavkaAdapter extends BaseAdapter {
 
     private Context mContext;
     private ArrayList<Stavka> mStavke;
 
+    /************************************************************************/
+    /**
+     * @brief Constructor for StavkaAdapter
+     *
+     * @param context - Context
+     *
+     * @return StavkaAdapter
+     *************************************************************************/
     public StavkaAdapter (Context context){
         mContext = context;
         mStavke = new ArrayList<Stavka>();
     }
 
+    /************************************************************************/
+    /**
+     * @brief Adds new item in array list
+     *
+     * @param stavka - Item to be added
+     *
+     * @return void
+     *************************************************************************/
     public void addStavka (Stavka stavka){
         mStavke.add(stavka);
         notifyDataSetChanged();
     }
 
+    /************************************************************************/
+    /**
+     * @brief Remove item in given position
+     *
+     * @param postion - position of item whom will be removed
+     *
+     * @return bool
+     *************************************************************************/
     public boolean removeItem(int postion){
         if(mStavke.remove(postion) != null){
             notifyDataSetChanged();
@@ -38,6 +76,14 @@ public class StavkaAdapter extends BaseAdapter {
             return false;
     }
 
+    /************************************************************************/
+    /**
+     * @brief Remove given item.
+     *
+     * @param object - Object to be removed
+     *
+     * @return bool
+     *************************************************************************/
     public boolean removeItem(Object object){
         if(mStavke.remove(object)){
             notifyDataSetChanged();
