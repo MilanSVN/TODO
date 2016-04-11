@@ -30,6 +30,22 @@ public class StavkaAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
+    public boolean removeItem(int postion){
+        if(mStavke.remove(postion) != null){
+            notifyDataSetChanged();
+            return true;
+        }else
+            return false;
+    }
+
+    public boolean removeItem(Object object){
+        if(mStavke.remove(object)){
+            notifyDataSetChanged();
+            return  true;
+        }else
+            return false;
+    }
+
     @Override
     public int getCount() {
         return mStavke.size();

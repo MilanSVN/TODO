@@ -50,8 +50,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public boolean onItemLongClick(AdapterView<?> arg0, View arg1,
                                            int pos, long id) {
-                // TODO Auto-generated method stub
-
                 Intent myIntent = new Intent(MainActivity.this, EditStavka.class);
                 myIntent.putExtra("index", pos); //Optional parameters
                 startActivity(myIntent);

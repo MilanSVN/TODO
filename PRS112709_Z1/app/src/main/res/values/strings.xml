@@ -7,4 +7,7 @@
     <string name="saved">Item saved!</string>
     <string name="empty">Item can not be empty!</string>
     <string name="delete">DELETE THIS NOTE</string>
+    <string name="changesSaved">Changes saved!</string>
+    <string name="error">ERROR!</string>
+    <string name="deleted">Item deleted!</string>
 </resources>
